@@ -1,0 +1,130 @@
+#################################################
+# INSIGHTMAIL PRO — FULL STACK GITIGNORE
+# MERN + VITE + FASTAPI
+#################################################
+
+############################
+# ENV FILES (IMPORTANT)
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# NODE MODULES
+############################
+node_modules/
+**/node_modules/
+
+############################
+# FRONTEND (VITE / REACT)
+############################
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+############################
+# BACKEND (NODE / EXPRESS)
+############################
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/uploads/
+backend/logs/
+
+############################
+# PYTHON / FASTAPI (AI SERVICE)
+############################
+ai-service/__pycache__/
+ai-service/*.pyc
+ai-service/*.pyo
+ai-service/*.pyd
+ai-service/.venv/
+ai-service/venv/
+ai-service/env/
+ai-service/.env
+ai-service/.pytest_cache/
+
+############################
+# DATABASE
+############################
+*.db
+*.sqlite3
+mongodb-data/
+dump/
+
+############################
+# LOG FILES
+############################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+############################
+# OS FILES
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+############################
+# IDE / EDITOR
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################
+# BUILD OUTPUTS
+############################
+dist/
+build/
+coverage/
+
+############################
+# TEMP FILES
+############################
+tmp/
+temp/
+.cache/
+
+############################
+# TEST OUTPUT
+############################
+coverage/
+htmlcov/
+
+############################
+# UPLOADED FILES
+############################
+uploads/
+*.pdf
+*.csv
+*.xlsx
+
+############################
+# SECRETS / KEYS
+############################
+*.pem
+*.key
+*.crt
+id_rsa
+id_dsa
+
+############################
+# MAC + WINDOWS SYSTEM
+############################
+.AppleDouble
+.LSOverride
+
+############################
+# OPTIONAL: AI MODELS
+############################
+*.pt
+*.onnx
+*.bin
+*.model
